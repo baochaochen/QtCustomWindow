@@ -1,12 +1,13 @@
 # QtCustomWindow
-###一、简述
+
+## 一、简述
 
 在Qt开发中，有时候要使用自定义窗口的样式，这样既可以实现跨平台样式的统一，也往往也比默认的要美观。
 
 
 ![图1-1 自定义窗口效果](http://upload-images.jianshu.io/upload_images/189568-332e339039d80b5c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###二、原理和方法
+## 二、原理和方法
 
 在实际开发中，可以采用如下方法把原窗口的边框去除。
 ```c++
@@ -14,7 +15,7 @@ this->setWindowFlags(Qt::FramelessWindowHint | Qt::WindowMinimizeButtonHint);
 ```
 然后创建一个BaseWindow类以及一个BaseTitleBar类，前者用于封装一个窗口，可以继承QWidget/QMainWindow/QDialog等，后者是其标题栏，并添上相关信号和槽。
 
-###三、相关代码
+## 三、相关代码
 
 ---```BaseTitleBar.h```---
 
@@ -550,7 +551,7 @@ void BaseWindow::onButtonCloseClicked()
 	close();
 }
 ```
-四、应用代码
+## 四、应用代码
 
 创建一个自定义窗口类CustomMainWindow，继承自BaseWindow(带Ui文件)。
 
