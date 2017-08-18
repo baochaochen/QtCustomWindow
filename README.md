@@ -632,7 +632,5 @@ int main(int argc, char *argv[])
 }
 ```
 
-附上[[项目源码](https://github.com/baochaochen/QtCustomWindow)](http://blog.csdn.net/GoForwardToStep/article/details/53494800)。
-
 参考资料:
 [1].[[Qt 之 自定义窗口标题栏](http://blog.csdn.net/goforwardtostep/article/details/53494800)](http://blog.csdn.net/GoForwardToStep/article/details/53494800)
